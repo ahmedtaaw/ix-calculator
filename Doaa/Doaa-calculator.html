@@ -1,0 +1,55 @@
+
+<html>
+
+<head>
+<link  href="Doaa-calculator.css" type="text/css" rel="stylesheet" /> 
+<script src="Doaa-calculator.js" type="text/javascript"> </script>
+
+</head>
+
+<body>
+<form name="ClaculatorForm">
+<div class="calculator"> 
+	<div class="header"> 
+		<input type="button" class="clear" value="c" onclick=clearAll() />
+		<input type="text" class="screen" value="" name="Display" readonly />
+		<div class="clearboth"></div>
+	</div>
+
+	<div class="buttons"> 
+		<input type="button" class="number"  value="7" onclick=displayNumber(this.value) />
+		<input type="button"  class="number" value="8" onclick=displayNumber(this.value) />
+		<input type="button"  class="number" value="9" onclick=displayNumber(this.value) />
+		<input type="button"  class="action" name="PlusBtn" value="+" onclick=addNumber() />
+		
+		<input type="button" class="number" value="4" onclick=displayNumber(this.value) />
+		<input type="button" class="number" value="5" onclick=displayNumber(this.value) />
+		<input type="button" class="number" value="6" onclick=displayNumber(this.value) />
+		<input type="button" class="action" name="MinusBtn" value="-" onclick=minusNumber() />
+		
+		<input type="button" class="number" value="1" onclick=displayNumber(this.value) />
+		<input type="button" class="number" value="2" onclick=displayNumber(this.value) />
+		<input type="button" class="number" value="3" onclick=displayNumber(this.value) />
+		<input type="button" class="action" value="/" onclick=divisionNumber() />
+		
+		<input type="button" class="number" value="." onclick=displayNumber(this.value) />
+		<input type="button" class="number" value="0" onclick=displayNumber(this.value) />
+		<input type="button" class="number" name="equalBTn" value="="  onclick=calcTotalNumber() /> 
+		<input type="button" class="action" name="MultiplyBtn" value="*" onclick=mulitplyNumber() />
+		
+	</div>
+
+	<div class="footer"> </div>
+
+</div>
+
+</form>
+
+</body>
+
+
+<script>
+
+</script>
+
+</html>
